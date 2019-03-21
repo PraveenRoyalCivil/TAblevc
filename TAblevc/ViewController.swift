@@ -59,7 +59,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTable") as! CustomTable
         cell.delegate = self
         
-        
+        //
         cell.closure = { [unowned self] item in
 
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ItemVc") as! ItemVc
